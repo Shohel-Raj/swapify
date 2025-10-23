@@ -4,6 +4,7 @@ import MainLayout from "../Layout/MainLayout";
 import About from "../Page/About";
 import Login from "../Component/Authontication/Login";
 import SignUp from "../Component/Authontication/SignUp";
+import ForgetPassword from "../Component/ShareComponent/ForgetPassword";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
       {
         path:"/signup",
         element:<SignUp/>
+      },
+      {
+        path:"/forgot-password",
+        element:<ForgetPassword/>
       }
     ],
   },

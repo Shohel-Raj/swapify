@@ -2,9 +2,10 @@ import React, { use } from "react";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../Context/AuthContext";
 import { toast } from "react-toastify";
+import Loader from "../ShareComponent/Loader";
 
 const Navbar = () => {
-  const { user, signOutUser } = use(AuthContext);
+  const { user, signOutUser,loading } = use(AuthContext);
 
   const handleLogout = () => {
     signOutUser()
@@ -41,10 +42,32 @@ const Navbar = () => {
         >
           About Me
         </NavLink>
+
       </li>
+      {
+        user &&  <li>
+        <NavLink
+          to="/profile"
+          className={({ isActive }) =>
+            `font-medium transition-colors duration-200 ${
+              isActive
+                ? "text-primary border-b-2 border-primary"
+                : "text-gray-600 hover:text-primary"
+            }`
+          }
+        >
+          Profile
+        </NavLink>
+
+      </li>
+      }
      
     </>
   );
+
+  if(loading){
+    return <Loader/>
+  }
 
   return (
     <div className="navbar">
