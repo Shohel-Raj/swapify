@@ -31,6 +31,21 @@ const Navbar = () => {
       </li>
       <li>
         <NavLink
+          to="/allSkills"
+          className={({ isActive }) =>
+            `font-medium transition-colors duration-200 ${
+              isActive
+                ? "text-primary border-b-2 border-primary"
+                : "text-gray-600 hover:text-primary"
+            }`
+          }
+        >
+          All Skills
+        </NavLink>
+
+      </li>
+      <li>
+        <NavLink
           to="/about"
           className={({ isActive }) =>
             `font-medium transition-colors duration-200 ${
@@ -123,7 +138,7 @@ const Navbar = () => {
           </>
         ) : (
           <div className="flex items-center gap-3">
-            <div className="relative group">
+            <div className="relative group cursor-pointer">
               <img
                 src={
                   user.photoURL || "https://i.ibb.co/2FsfXqM/default-avatar.png"
