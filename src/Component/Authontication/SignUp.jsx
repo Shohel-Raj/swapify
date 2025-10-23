@@ -1,13 +1,17 @@
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router";
+import { Link, useLocation, useNavigate } from "react-router";
 import { useAuth } from "../../Context/useAuth";
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 const SignUp = () => {
-  const { createUser, googleSignin } = useAuth();
+  const { createUser, googleSignin ,updateUserProfile} = useAuth();
   const navigate = useNavigate();
+  const location = useLocation();
 
-  const [name, setName] = useState("");
+  // Get the redirect destination from ProtectedRouts
+  const from = location.state?.from?.pathname || "/";
+
+  const [displayName, setName] = useState("");
   const [email, setEmail] = useState("");
   const [photoURL, setPhotoURL] = useState("");
   const [password, setPassword] = useState("");
@@ -21,32 +25,47 @@ const SignUp = () => {
     return hasUpper && hasLower && hasMinLength;
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    if (!validatePassword(password)) {
-      toast.error(
-        "Password must have uppercase, lowercase letters and be at least 6 characters long."
-      );
-      return;
-    }
+const handleSubmit = async (e) => {
+  e.preventDefault();
 
-    setLoading(true);
-    try {
-      await createUser(email, password, name, photoURL);
+  // ✅ Password validation
+  if (!validatePassword(password)) {
+    toast.error(
+      "Password must include uppercase, lowercase letters and be at least 6 characters long."
+    );
+    return;
+  }
+
+  setLoading(true);
+
+  try {
+    // ✅ Step 1: Create user with email & password
+    const result = await createUser(email, password);
+
+    if (result) {
+      // ✅ Step 2: Update user profile with name & photo
+      await updateUserProfile({
+        displayName,
+        photoURL,
+      });
+
       toast.success("Account created successfully!");
-      navigate("/"); // redirect to home
-    } catch (err) {
-      toast.error(err.message);
+      navigate(from, { replace: true });
     }
+  } catch (err) {
+    console.error("Signup error:", err);
+    toast.error(err.message || "Failed to create account.");
+  } finally {
     setLoading(false);
-  };
+  }
+};
 
   const handleGoogleLogin = async () => {
     setLoading(true);
     try {
       await googleSignin();
       toast.success("Logged in with Google!");
-      navigate("/");
+     navigate(from, { replace: true });
     } catch (err) {
       toast.error(err.message);
     }
@@ -61,7 +80,7 @@ const SignUp = () => {
           <input
             type="text"
             placeholder="Full Name"
-            value={name}
+            value={displayName}
             onChange={(e) => setName(e.target.value)}
             required
             className="input input-bordered w-full"

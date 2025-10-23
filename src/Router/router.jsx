@@ -5,6 +5,8 @@ import About from "../Page/About";
 import Login from "../Component/Authontication/Login";
 import SignUp from "../Component/Authontication/SignUp";
 import ForgetPassword from "../Component/ShareComponent/ForgetPassword";
+import Profile from "../Page/Profile";
+import ProtectedRouts from "./ProtectedRouts";
 
 const router = createBrowserRouter([
   {
@@ -17,7 +19,16 @@ const router = createBrowserRouter([
       },
       {
         path: "/about",
-        element:<About/>
+        element:
+        <ProtectedRouts>
+          <About/>
+        </ProtectedRouts>
+        
+
+      },
+      {
+        path: "/profile",
+        element:<Profile/>
 
       },
       {

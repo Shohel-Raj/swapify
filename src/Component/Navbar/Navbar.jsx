@@ -1,8 +1,8 @@
 import React, { use } from "react";
 import { Link, NavLink } from "react-router";
 import { AuthContext } from "../../Context/AuthContext";
-import { toast } from "react-toastify";
 import Loader from "../ShareComponent/Loader";
+import toast from "react-hot-toast";
 
 const Navbar = () => {
   const { user, signOutUser,loading } = use(AuthContext);
@@ -70,7 +70,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className="navbar">
+    <div className="navbar px-0">
       {/* Left */}
       <div className="navbar-start">
         {/* Mobile Dropdown */}
@@ -100,7 +100,7 @@ const Navbar = () => {
         </div>
 
         {/* Logo */}
-        <Link to="/" className="btn btn-ghost text-xl font-bold">
+        <Link to="/" className="btn btn-ghost hover:bg-none pl-0  text-xl font-bold">
           <span className="text-primary">Swapify</span>
         </Link>
       </div>

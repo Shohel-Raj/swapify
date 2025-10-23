@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link, useNavigate, useLocation } from "react-router";
 import {useAuth} from "../../Context/useAuth"
-import { toast } from "react-toastify";
+import toast from "react-hot-toast";
 
 const Login = () => {
   const { signInUser, googleSignin } = useAuth();
@@ -20,7 +20,7 @@ const Login = () => {
     setLoading(true);
     try {
       await signInUser(email, password);
-      toast.success("Login successful!");
+      toast.success("Login successful!", { removeDelay: 500 });
       navigate(from, { replace: true });
     } catch (err) {
       toast.error(err.message);
