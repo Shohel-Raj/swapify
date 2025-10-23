@@ -44,21 +44,7 @@ const Navbar = () => {
         </NavLink>
 
       </li>
-      <li>
-        <NavLink
-          to="/about"
-          className={({ isActive }) =>
-            `font-medium transition-colors duration-200 ${
-              isActive
-                ? "text-primary border-b-2 border-primary"
-                : "text-gray-600 hover:text-primary"
-            }`
-          }
-        >
-          About Me
-        </NavLink>
-
-      </li>
+      
       {
         user &&  <li>
         <NavLink

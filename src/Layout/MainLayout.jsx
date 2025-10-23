@@ -4,6 +4,7 @@ import Wrapper from "../Component/Common/Wraper";
 import Navbar from "../Component/Navbar/Navbar";
 import { ToastContainer } from "react-toastify";
 import { Toaster } from "react-hot-toast";
+import Footer from "../Component/Footer/Footer";
 
 const MainLayout = () => {
   return (
@@ -15,6 +16,11 @@ const MainLayout = () => {
       </div>
 
       <Outlet></Outlet>
+      <div className="bg-gray-900 text-gray-200 pt-10">
+        <Wrapper>
+          <Footer />
+        </Wrapper>
+      </div>
 
       <ToastContainer />
       <Toaster />

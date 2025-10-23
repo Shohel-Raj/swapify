@@ -8,6 +8,7 @@ import ForgetPassword from "../Component/ShareComponent/ForgetPassword";
 import Profile from "../Page/Profile";
 import ProtectedRouts from "./ProtectedRouts";
 import AllSkills from "../Page/AllSkills";
+import SkillDetails from "../Page/SkillDetails";
 
 const router = createBrowserRouter([
   {
@@ -24,8 +25,6 @@ const router = createBrowserRouter([
         <ProtectedRouts>
           <About/>
         </ProtectedRouts>
-        
-
       },
       {
         path: "/allSkills",
@@ -34,7 +33,14 @@ const router = createBrowserRouter([
           <AllSkills/>
         </ProtectedRouts>
         
-
+      },
+      {
+        path: "/skills-details/:id",
+        element:
+        <ProtectedRouts>
+          <SkillDetails/>
+        </ProtectedRouts>
+        
       },
       {
         path: "/profile",

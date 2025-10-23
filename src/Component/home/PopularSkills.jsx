@@ -33,7 +33,7 @@ const PopularSkills = () => {
   };
 
   return (
-    <section className="py-16 px-4 md:px-12 ">
+    <section className="py-16">
       {/* Heading */}
       <div className="text-center mb-12">
         <h2 className="text-3xl md:text-5xl font-bold  mb-3">
@@ -45,7 +45,7 @@ const PopularSkills = () => {
       </div>
 
       {/* Skill Cards */}
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 max-w-6xl mx-auto">
+      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 ">
         {skills.map((skill, index) => (
           <div
             key={skill.skillId}
@@ -85,9 +85,9 @@ const PopularSkills = () => {
                 <span className="text-blue-600 font-bold text-lg">
                   ${skill.price}
                 </span>
-                <button className="px-4 py-2 cursor-pointer text-blue-600 border border-blue-600 rounded-full text-sm font-medium hover:bg-blue-50 hover:scale-105 transition-all duration-300">
+                <NavLink to={`/skills-details/${skill.skillId}`} className="px-4 py-2 cursor-pointer text-blue-600 border border-blue-600 rounded-full text-sm font-medium hover:bg-blue-50 hover:scale-105 transition-all duration-300">
                   View Details
-                </button>
+                </NavLink>
               </div>
             </div>
           </div>
