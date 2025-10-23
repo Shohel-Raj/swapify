@@ -8,7 +8,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Acoustic guitar classes for complete beginners.",
-    "image": "https://i.postimg.cc/9fX5fXXf/guitar-lessons.jpg",
+    "image": "https://i.postimg.cc/130WWNMr/Music.jpg",
     "category": "Music"
   },
   {
@@ -20,7 +20,7 @@
     "rating": 4.6,
     "slotsAvailable": 5,
     "description": "Conversational English sessions for non-native speakers.",
-    "image": "https://i.postimg.cc/k5trNfST/spoken-english.jpg",
+    "image": "https://i.postimg.cc/gk3FWjNK/speaking.jpg",
     "category": "Language"
   },
   {
@@ -32,7 +32,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Learn HTML, CSS, and JavaScript to build your first website.",
-    "image": "https://i.postimg.cc/MpQPpRXg/web-dev.jpg",
+    "image": "https://i.postimg.cc/F15Zp9L6/web-app.jpg",
     "category": "Technology"
   },
   {
@@ -44,7 +44,7 @@
     "rating": 4.7,
     "slotsAvailable": 6,
     "description": "Gentle yoga routines to improve flexibility and relaxation.",
-    "image": "https://i.postimg.cc/cJ3PnGpp/yoga.jpg",
+    "image": "https://i.postimg.cc/QVGbmXTS/yoga.jpg",
     "category": "Wellness"
   },
   {
@@ -56,7 +56,7 @@
     "rating": 4.8,
     "slotsAvailable": 3,
     "description": "Learn to create digital art using Procreate or Photoshop.",
-    "image": "https://i.postimg.cc/25QGs3XW/digital-art.jpg",
+    "image": "https://i.postimg.cc/mZFKYhxm/Illustration.jpg",
     "category": "Design"
   },
   {
@@ -68,7 +68,7 @@
     "rating": 4.5,
     "slotsAvailable": 5,
     "description": "Understand composition, lighting, and camera settings.",
-    "image": "https://i.postimg.cc/0yD9nJbT/photography.jpg",
+    "image": "https://i.postimg.cc/63FgsxZc/Photography-Skills.jpg",
     "category": "Art"
   },
   {
@@ -80,7 +80,7 @@
     "rating": 4.9,
     "slotsAvailable": 4,
     "description": "Learn to cook authentic Bengali recipes step by step.",
-    "image": "https://i.postimg.cc/0ybx0b7Q/bengali-food.jpg",
+    "image": "https://i.postimg.cc/GmjW4N0t/cooking.jpg",
     "category": "Cooking"
   },
   {
@@ -92,7 +92,7 @@
     "rating": 4.7,
     "slotsAvailable": 3,
     "description": "Boost your communication skills and overcome stage fear.",
-    "image": "https://i.postimg.cc/TYc8BNJv/public-speaking.jpg",
+    "image": "https://i.postimg.cc/gk3FWjNK/speaking.jpg",
     "category": "Soft Skills"
   },
   {
@@ -104,7 +104,7 @@
     "rating": 4.9,
     "slotsAvailable": 5,
     "description": "Start coding with Python — learn variables, loops, and functions.",
-    "image": "https://i.postimg.cc/3J8r6z4J/python-course.jpg",
+    "image": "https://i.postimg.cc/vZwqLv76/python.jpg",
     "category": "Technology"
   },
   {
@@ -116,7 +116,7 @@
     "rating": 4.6,
     "slotsAvailable": 6,
     "description": "Develop storytelling skills and explore your writing voice.",
-    "image": "https://i.postimg.cc/zX7v5t5y/creative-writing.jpg",
+    "image": "https://i.postimg.cc/tgCLW5yh/writing.jpg",
     "category": "Writing"
   },
   {
@@ -128,7 +128,7 @@
     "rating": 4.8,
     "slotsAvailable": 4,
     "description": "Master Canva, color theory, and layout fundamentals.",
-    "image": "https://i.postimg.cc/4dFk3Rt1/graphic-design.jpg",
+    "image": "https://i.postimg.cc/cHCX4kZG/drawing.jpg",
     "category": "Design"
   },
   {
@@ -140,7 +140,7 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Personalized bodyweight workouts to improve strength and stamina.",
-    "image": "https://i.postimg.cc/nrTbX2QL/fitness.jpg",
+    "image": "https://i.postimg.cc/cHzTK746/fitness.jpg",
     "category": "Health"
   },
   {
@@ -152,7 +152,7 @@
     "rating": 4.9,
     "slotsAvailable": 3,
     "description": "Edit videos using Adobe Premiere or DaVinci Resolve.",
-    "image": "https://i.postimg.cc/pXyg1BZk/video-editing.jpg",
+    "image": "https://i.postimg.cc/B6bMQ73R/video-editing.jpg",
     "category": "Media"
   },
   {
@@ -164,7 +164,7 @@
     "rating": 4.5,
     "slotsAvailable": 6,
     "description": "Learn pencil sketching, shading, and basic proportions.",
-    "image": "https://i.postimg.cc/Nf4zC4ph/sketching.jpg",
+    "image": "https://i.postimg.cc/cHCX4kZG/drawing.jpg",
     "category": "Art"
   },
   {
@@ -176,7 +176,7 @@
     "rating": 4.8,
     "slotsAvailable": 4,
     "description": "Master Excel formulas, charts, and pivot tables for analysis.",
-    "image": "https://i.postimg.cc/FFp6G9h3/excel.jpg",
+    "image": "https://i.postimg.cc/K4SNfZTF/excel.jpg",
     "category": "Technology"
   },
   {
@@ -188,7 +188,7 @@
     "rating": 4.7,
     "slotsAvailable": 5,
     "description": "Learn quick and natural makeup techniques for daily use.",
-    "image": "https://i.postimg.cc/xThpk2jt/makeup.jpg",
+    "image": "https://i.postimg.cc/PfPSGqd5/makeup.jpg",
     "category": "Beauty"
   },
   {
@@ -200,7 +200,7 @@
     "rating": 4.6,
     "slotsAvailable": 4,
     "description": "Learn hand stitching and sewing machine basics.",
-    "image": "https://i.postimg.cc/Pr5LnJfW/sewing.jpg",
+    "image": "https://i.postimg.cc/V5PNkhx4/sweeing.jpg",
     "category": "Crafts"
   },
   {
@@ -212,7 +212,7 @@
     "rating": 4.9,
     "slotsAvailable": 3,
     "description": "Enhance and color-grade photos professionally using Lightroom.",
-    "image": "https://i.postimg.cc/KzZBbrp5/lightroom.jpg",
+    "image": "https://i.postimg.cc/63FgsxZc/Photography-Skills.jpg",
     "category": "Photography"
   },
   {
@@ -224,7 +224,7 @@
     "rating": 4.7,
     "slotsAvailable": 4,
     "description": "Learn to decorate your home with creative and affordable ideas.",
-    "image": "https://i.postimg.cc/dtW2GmGh/interior.jpg",
+    "image": "https://i.postimg.cc/NLv0jn3p/interior.jpg",
     "category": "Design"
   },
   {
@@ -236,7 +236,7 @@
     "rating": 4.5,
     "slotsAvailable": 6,
     "description": "Get familiar with Windows, MS Office, and online tools.",
-    "image": "https://i.postimg.cc/0yrx7DdC/computer-basics.jpg",
+    "image": "https://i.postimg.cc/BvMm39r2/basic-computer.jpg",
     "category": "Technology"
   }
 ]

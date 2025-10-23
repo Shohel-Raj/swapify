@@ -44,7 +44,7 @@ const AllSkills = () => {
 
   return (
     <Wrapper>
-      <section className="  min-h-screen">
+      <section className="  min-h-screen mb-5">
         {/* Heading */}
         <div className="text-center mb-8">
           <h2

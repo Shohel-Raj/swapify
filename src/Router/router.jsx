@@ -9,11 +9,13 @@ import Profile from "../Page/Profile";
 import ProtectedRouts from "./ProtectedRouts";
 import AllSkills from "../Page/AllSkills";
 import SkillDetails from "../Page/SkillDetails";
+import ErrorPage from "../Page/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: MainLayout,
+    errorElement:<ErrorPage/>,
     children: [
       {
         index: true,
